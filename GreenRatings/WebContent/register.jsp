@@ -165,13 +165,13 @@
                 <form class="reg_form_card" action="RegisterServlet" method="post">
                     <div id="caption">Sign up to see ratings of your favorite professors.</div>
                     <div>
-                        <input type="text" class="email drtz" aria-required="true" placeholder="DLSU Email" name="email">
+                        <input type="text" class="email drtz" aria-required="true" placeholder="DLSU Email" name="email" required>
                     </div>
                     <div>
-                        <input type="text" class="username drtz" aria-required="true" placeholder="Username" name="username">
+                        <input type="text" class="username drtz" aria-required="true" placeholder="Username" name="username" required>
                     </div>
                     <div>
-                        <input type="password" class="password drtz" aria-required="true" placeholder="Password" name="password">
+                        <input type="password" class="password drtz" aria-required="true" placeholder="Password" name="password" required>
                     </div>
                     <div>
                         <button type="submit" class="new_account btn" style="vertical-align:middle" ><span>Sign up </span></button>
