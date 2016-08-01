@@ -37,7 +37,7 @@
              }
              
              .main{
-                 height: 450px;
+                 height: 390px;
                  margin-top: 9%;
              }
              
@@ -162,22 +162,19 @@
         <center><div class="main card">
             <div id="sprite_header"></div><br>
             <div class="reg_field">
-                <form class="reg_form_card">
+                <form class="reg_form_card" action="RegisterServlet" method="post">
                     <div id="caption">Sign up to see ratings of your favorite professors.</div>
                     <div>
-                        <input type="text" class="email drtz" aria-required="true" placeholder="Email">
+                        <input type="text" class="email drtz" aria-required="true" placeholder="DLSU Email" name="email">
                     </div>
                     <div>
-                        <input type="text" class="name drtz" aria-required="true" placeholder="Full Name">
+                        <input type="text" class="username drtz" aria-required="true" placeholder="Username" name="username">
                     </div>
                     <div>
-                        <input type="text" class="username drtz" aria-required="true" placeholder="Username">
+                        <input type="password" class="password drtz" aria-required="true" placeholder="Password" name="password">
                     </div>
                     <div>
-                        <input type="password" class="password drtz" aria-required="true" placeholder="Password">
-                    </div>
-                    <div>
-                        <button class="new_account btn" style="vertical-align:middle" ><span><a href="user_home.html">Sign up </a></span></button>
+                        <button type="submit" class="new_account btn" style="vertical-align:middle" ><span>Sign up </span></button>
                     </div>
                     <div>
                         <p class="footer">By signing up, you agree to our Terms & Privacy Policy.</p>

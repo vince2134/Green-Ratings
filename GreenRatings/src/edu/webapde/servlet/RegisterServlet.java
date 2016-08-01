@@ -7,6 +7,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import edu.webapde.object.User;
+import edu.webapde.services.UserService;
+
 /**
  * Servlet implementation class RegisterServlet
  */
@@ -34,8 +37,14 @@ public class RegisterServlet extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		doGet(request, response);
+		User u = new User();
+		u.setUsername(request.getParameter(User.COLUMN_UN));
+		u.setEmail(request.getParameter(User.COLUMN_EMAIL));
+		u.setPassword(request.getParameter(User.COLUMN_PW));
+		
+		//tell the service to add the new object
+		UserService userService = new UserService();
+		userService.addUser(u);
 	}
 
 }

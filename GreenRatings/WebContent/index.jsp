@@ -37,7 +37,7 @@
              }
              
              .main{
-                 height: 270px;
+                 height: 280px;
                  margin-top: 13%;
              }
              

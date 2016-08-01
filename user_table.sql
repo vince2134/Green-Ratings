@@ -25,12 +25,11 @@ DROP TABLE IF EXISTS `users`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `users` (
-  `numid` int(11) NOT NULL AUTO_INCREMENT,
+  `idnum` int(11) NOT NULL AUTO_INCREMENT,
   `username` varchar(16) NOT NULL,
-  `name` varchar(45) NOT NULL,
   `email` varchar(45) NOT NULL,
   `password` varchar(45) NOT NULL,
-  PRIMARY KEY (`numid`),
+  PRIMARY KEY (`idnum`),
   UNIQUE KEY `userid_UNIQUE` (`username`),
   UNIQUE KEY `email_UNIQUE` (`email`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
@@ -42,7 +41,7 @@ CREATE TABLE `users` (
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` VALUES (1,'dhirentheindian','Dhiren Dhanani','dhiren_dhanani@dlsu.edu.ph','p@ssword'),(2,'MicohAlvarez','Micoh Alvarez','M_A@dlsu.edu.ph','G301NET!'),(3,'vinceGonzales','Allen Gonzales','V_g@dlsu.edu.ph','dlsu1234!');
+INSERT INTO `users` VALUES (1,'dhirentheindian','dhiren_dhanani@dlsu.edu.ph','p@ssword'),(2,'MicohAlvarez','M_A@dlsu.edu.ph','G301NET!'),(3,'vinceGonzales','V_g@dlsu.edu.ph','dlsu1234!');
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -55,4 +54,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-08-01 19:42:03
+-- Dump completed on 2016-08-01 20:18:45
