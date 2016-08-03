@@ -159,14 +159,14 @@
         <center><div class="main card">
             <div id="sprite_header"></div><br>
             <div class="login_field">
-                <form class="reg_form_card">
+                <form class="reg_form_card" action="LoginServlet" method = "post">
                <div id = "caption">Sign in to see ratings of your favorite professors in DLSU.</div>
                     <div>
-                        <input type="text" class="username drtz" aria-required="true" placeholder="Username">
+                        <input type="text" class="username drtz" aria-required="true" placeholder="Username" name ="username">
                     </div>
                     
                     <div>
-                        <input type="password" class="password drtz" aria-required="true" placeholder="Password">
+                        <input type="password" class="password drtz" aria-required="true" placeholder="Password" name = "password">
                     </div>
                     <div>
                         <button id="login_btn" class="login btn" style="vertical-align:middle"><span><a href="user_home.html">Log in </a></span></button>
