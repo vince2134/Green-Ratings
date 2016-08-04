@@ -3,7 +3,8 @@ package edu.webapde.db;
 import java.sql.Connection;
 import java.sql.SQLException;
 
-import org.apache.tomcat.dbcp.dbcp.BasicDataSource;
+import org.apache.tomcat.dbcp.dbcp2.BasicDataSource;
+
 
 public class DBPool {
 	private static DBPool singleton = null;
@@ -13,7 +14,7 @@ public class DBPool {
 		ds = new BasicDataSource();
 		ds.setDriverClassName("com.mysql.jdbc.Driver");
 		ds.setUsername("root");
-		ds.setPassword("mysqldev");
+		ds.setPassword("root");
 		ds.setUrl("jdbc:mysql://localhost:3306/greenratings");
 	}
 	

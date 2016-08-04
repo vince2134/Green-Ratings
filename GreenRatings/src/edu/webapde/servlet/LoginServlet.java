@@ -1,6 +1,8 @@
 package edu.webapde.servlet;
 
 import java.io.IOException;
+import java.util.ArrayList;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -11,42 +13,54 @@ import edu.webapde.object.User;
 import edu.webapde.services.UserService;
 
 /**
- * Servlet implementation class RegisterServlet
+ * Servlet implementation class LoginServlet
  */
-@WebServlet("/RegisterServlet")
-public class RegisterServlet extends HttpServlet {
+@WebServlet("/LoginServlet")
+public class LoginServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public RegisterServlet() {
+    public LoginServlet() {
         super();
-
+        // TODO Auto-generated constructor stub
     }
 
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
 		response.getWriter().append("Served at: ").append(request.getContextPath());
-		request.getRequestDispatcher("register.jsp").forward(request, response);
+
 	}
 
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		User u = new User();
-		u.setUsername(request.getParameter(User.COLUMN_UN));
-		u.setEmail(request.getParameter(User.COLUMN_EMAIL));
-		u.setPassword(request.getParameter(User.COLUMN_PW));
+		// TODO Auto-generated method stub
+		String un = request.getParameter(User.COLUMN_UN);
+		String pw = request.getParameter(User.COLUMN_PW);
 		
-		//tell the service to add the new object
-		UserService userService = new UserService();
-		userService.addUser(u);
-		request.getRequestDispatcher("index.jsp").forward(request, response);
+		UserService us = new UserService();
+		
+		ArrayList<User> users = us.getAllUsers();
+		
+		for(int i = 0; i < users.size(); i++){
+			String temp1 = users.get(i).getUsername();
+			String temp2 = users.get(i).getPassword();
+			if(un.equalsIgnoreCase(temp1)){
 
+				if(pw.equals(temp2)){
+					System.out.print("Correct Username and Password");
+				}
+			}
+			
+		}
+		
+		
 	}
 
 }
