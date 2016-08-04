@@ -162,11 +162,11 @@
                 <form class="reg_form_card">
                <div id = "caption">Sign in to see ratings of your favorite professors in DLSU.</div>
                     <div>
-                        <input type="text" class="username drtz" aria-required="true" placeholder="Username">
+                        <input type="text" class="username drtz" aria-required="true" placeholder="Username" required>
                     </div>
                     
                     <div>
-                        <input type="password" class="password drtz" aria-required="true" placeholder="Password">
+                        <input type="password" class="password drtz" aria-required="true" placeholder="Password" required>
                     </div>
                     <div>
                         <button id="login_btn" class="login btn" style="vertical-align:middle"><span><a href="user_home.html">Log in </a></span></button>
