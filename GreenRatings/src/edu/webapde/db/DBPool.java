@@ -14,7 +14,11 @@ public class DBPool {
 		ds = new BasicDataSource();
 		ds.setDriverClassName("com.mysql.jdbc.Driver");
 		ds.setUsername("root");
+<<<<<<< HEAD
 		ds.setPassword("mysqldev");
+=======
+		ds.setPassword("micohalvarez");
+>>>>>>> a01f1ec380c0ac108b2b1194c23b26ff29237254
 		ds.setUrl("jdbc:mysql://localhost:3306/greenratings");
 	}
 	

@@ -55,11 +55,13 @@ public class LoginServlet extends HttpServlet {
 
 				if(pw.equals(temp2)){
 					System.out.print("Correct Username and Password");
+					request.getRequestDispatcher("user_home.jsp").forward(request, response);
 				}
 			}
+	
 			
 		}
-		
+		request.getRequestDispatcher("index.jsp").forward(request, response);
 		
 	}
 
