@@ -1,0 +1,402 @@
+ div{
+                 display:block;
+                 position: relative;
+             }
+             
+             body{
+                 background-color: #fafafa;
+             }
+             
+             .menu_top{
+                 height: 75px;
+                 background-color: white;
+                 position: absolute;
+                 border-bottom: 1px solid #dbdbdb;
+                 width:100%;
+                 left:0px;
+                 top:0px;
+                 padding: 0;
+             }
+             
+             @font-face {
+                 font-family: 'Roboto';
+                 font-style: normal;
+                 font-weight: 400;
+                 src: local('Roboto Regular'), 
+                      local('Roboto-Regular'), 
+                      url(http://themes.googleusercontent.com/static/fonts/roboto/v11/2UX7WLTfW3W8TclTUvlFyQ.woff) 
+                 format('woff');
+             }
+             
+             #menu_title{
+                 font-family: Roboto;
+                 font-size: 22px;
+                 font-stretch: expanded;
+                 left:100px;
+                 position: absolute;
+                 top:14px;
+                 
+             }
+             
+             #menu_search{
+                 margin-left: 43%;
+                 margin-top: 17px;
+                 height: 40px;
+             }
+             
+             #test{
+                 height: 1000px;
+                 width: 500px;
+                 background-color: aqua;
+             }
+             
+             #sprite_header{
+                 background-image: url(sprite.png);
+                 background-repeat: no-repeat;
+                 background-position: -1px -2px;
+                 height: 25px;
+                 width: 650px;
+                 background-size: 22%;
+                 margin-left: 410px;
+                 margin-top: 11px;
+             }
+             
+             .text_search{
+                 font-family: Roboto;
+                 border: solid 1px #dbdbdb;
+                 border-radius: 3px;
+                 color: #262626;
+                 font-size: 12px;
+                 outline: none;
+                 z-index: 2;
+                 box-sizing: border-box;
+                 padding-left: 5px;
+                 height: 65%;
+                 width: 25%;
+                 transition-duration: 0.4s;
+                 background-color: #fafafa;
+                 text-align: center;
+                 margin-top: 7px;
+             }
+             
+             .text_search:focus{
+                 text-align: left;
+                 background-color: white;
+             }
+             
+             .text_search:hover{
+                 background-color: white;
+             }
+             
+             .main_section{
+                 padding-top: 120px;
+                 margin: 0 auto;
+                 max-width: 600px;
+                 width: 100%;
+                 margin-top: 60px;
+             }
+             
+             .container{
+                 margin-bottom: 30px;
+             }
+             
+             .card{
+                 background-color: #fff;
+                 border: 1px solid #efefef;
+                 border-radius: 3px;
+                 width:600px;
+                 margin-left: auto;
+                 margin-right: auto;
+                 margin-bottom: 50px;
+             }
+             
+             .card_header{
+                 height: 20px;
+                 color:#262626;
+                 padding-top: 14px;
+                 padding-bottom: 14px;
+                 padding-left: 40px;
+                 font-family: Roboto;
+                 font-size: 15px;
+                 width:600px;
+                 text-align: left;
+                 font-weight: 600;
+                 font-stretch: expanded;
+             }
+             .black_header{
+                 color:#262626;
+             }
+             .green_header{
+                  color:#4CAF50;
+             }
+             .review_format{
+                 display: block;
+                 width: 100%;
+                 color:#262626;
+                 padding-top: 14px;
+                 padding-bottom: 14px;
+                 font-family: Roboto;
+                 font-size: 14px;
+                 overflow: hidden;
+                 text-overflow: ellipsis;
+                 white-space: nowrap;
+                 padding-left: 40px;
+                 width: 560px;
+                 text-align: left;
+                 border-top: 1px solid #efefef;
+             }
+             
+             .main_review{
+                 display: block;
+                 width: 100%;
+                 color:#262626;
+                 padding-top: 14px;
+                 padding-bottom: 14px;
+                 font-family: Roboto;
+                 font-size: 14px;
+                 padding-left: 40px;
+                 padding-right: 40px;
+                 width: 521px;
+                 text-align: left;
+                 border-top: 1px solid #efefef;
+             }
+             
+             article{
+                 transition-duration: 0.4s;
+             }
+             
+             article:hover{
+                 border: 1px solid rgba(0,153,51,0.4);
+                 border-bottom-right-radius: 25px;
+                 border-top-left-radius: 30px;
+             }
+             
+             .username{
+                 font-weight: 600;
+             }
+             
+             .btn{
+                 font-family:Roboto;
+                 display: inline-block;
+                 border-radius: 4px;
+                 background-color: #4CAF50;
+                 border: none;
+                 color: #FFFFFF;
+                 text-align: center;
+                 font-size: 14px;
+                 padding: 9px;
+                 transition: all 0.5s;
+                 cursor: pointer;
+                 position: absolute;
+                 margin-left: 1277px;
+                 margin-top: -40px;
+             }
+             
+             .btn:hover{
+                 background-color: #6FBF72;
+             }
+             
+             a{
+                 text-decoration: none;
+                 color: white;
+                 font-family: Roboto;
+             }
+             
+             .dislike{
+                 font-weight: 600;
+                 padding-left: 20px;
+             }
+             
+             .like{
+                font-weight: 600;
+             }
+             
+             .comments{
+                 margin: 0px;
+                 height: 0px;
+             }
+             
+             .add_comment{
+                 font-family: Roboto;
+                 font-size: 15px;
+                 padding-top: 14px;
+                 padding-bottom: 16px;
+                 padding-left: 12px;
+                 height: 50px;
+                 border-top: 1px solid #efefef;
+                 border-bottom: none;
+                 border-left: none;
+                 border-right: none;
+                 background: 0 0;
+                 color: #262626;
+                 outline: none;
+                 display: block;
+                 width: 489px;
+                 margin-left: 111px;
+                 margin-right: 40px;
+             }
+             
+             .pos_reaction{
+                 background-image: url(sprite.png);
+                 background-repeat: no-repeat;
+                 background-position: 24px -33px;
+                 height: 50px;
+                 width: 47px;
+                 background-size: 418%;
+                 display: block;
+                 overflow: hidden;
+                 text-indent: 110%;
+                 white-space: nowrap;
+                 position: absolute;
+                 margin-top: 6px;
+                 margin-left: 16px;
+             }
+             
+             .neg_reaction{
+                 background-image: url(sprite.png);
+                 background-repeat: no-repeat;
+                 background-position: -25px -39px;
+                 height: 50px;
+                 width: 47px;
+                 background-size: 418%;
+                 display: block;
+                 overflow: hidden;
+                 text-indent: 110%;
+                 white-space: nowrap;
+                 position: absolute;
+                 margin-top: 6px;
+                 margin-left: 66px;
+
+             }
+             
+             .add{
+                 font-family: Roboto;
+                 font-size: 15px;
+                 padding-top: 14px;
+                 padding-bottom: 16px;
+                 padding-left: 12px;
+                 height: 50px;
+                 border-top: none;
+                 border-bottom: none;
+                 border-left: none;
+                 border-right: none;
+                 background: 0 0;
+                 color: #262626;
+                 padding-top: 14px;
+                 padding-bottom: 14px;
+                 outline: none;
+                 width: 100%;
+                 padding-left: 40px;
+                 padding-right: 40px;
+             }
+             
+             .review{
+                 border-top: 1px solid #efefef;
+                                  height: auto;
+             }
+             
+             .post{
+                 font-family:Roboto;
+                 display: inline-block;
+                 border-radius: 4px;
+                 background-color: #4CAF50;
+                 border: none;
+                 color: #FFFFFF;
+                 text-align: center;
+                 font-size: 14px;
+                 padding: 9px;
+                 transition: all 0.5s;
+                 cursor: pointer;
+                 
+                 margin-left: 480px;
+                 margin-right: 40px;
+                 margin-top: 14px;
+                 margin-bottom: 14px;
+                 width: 70px;
+             }
+             
+             .post:hover{
+                 background-color: #6FBF72;
+             }
+             
+             .post_con{
+                 border-top: 1px solid #efefef;
+             }
+             
+             .prof{
+                 border-bottom: 1px solid #efefef;
+             }
+             
+             .ratings{
+                 font-family: Roboto;
+                 height: 50px;
+                 font-size: 14px;
+                 margin-left: 40px;
+                 margin-right: 40px;
+                 margin-top: 14px;
+                 margin-bottom: 14px;
+                 display: inline-block;
+             }
+             
+             textarea{
+                 font-family: Roboto;
+                 font-size: 14px;
+                 width: 86%;
+                 outline: none;
+                 resize: none;
+                 border: none;
+             }
+             
+             .dropbtn {
+                 background-color: white;
+                 transition-duration: 0.4s;
+                 color:black;
+                 padding: 15px;
+                 font-size: 14px;
+                 border: none;
+                 cursor: pointer;
+                font-family: Roboto;
+                 height: 50px;
+                 border-left: 1px solid #dbdbdb;
+                 border-right: 1px solid #dbdbdb;               
+                }
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    font-size: 14px;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 2;
+}
+
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+       z-index: 2;
+}
+
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.dropdown:hover .dropbtn {
+    background-color: #4CAF50;
+    color: white;
+}
