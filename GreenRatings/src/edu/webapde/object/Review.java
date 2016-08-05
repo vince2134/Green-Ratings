@@ -7,7 +7,7 @@ public class Review {
 	public final static String COLUMN_DIS = "dislikes";
 	
 	private int likes, dislikes;
-	private String content;
+	private String content = "Ms. Courtney, Ms. Bulos";
 	public int getLikes() {
 		return likes;
 	}
